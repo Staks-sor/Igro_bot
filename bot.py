@@ -13,7 +13,7 @@ dp = Dispatcher(bot)
 async def hi(message: types.Message):
     await message.reply(f'Привет.\n Готов ли ты бросить вызов судьбе и стать самым крутым разработчиком', reply_markup=kb.markup0)
 
-
+#поменять на решение задачи
 @dp.message_handler(Text(equals="Создать персонажа"))
 async def tutorial(message: types.Message):
     await message.reply("https://readyplayer.me", reply_markup=kb.markup1)
