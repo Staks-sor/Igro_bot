@@ -18,11 +18,11 @@ async def hi(message: types.Message):
 async def tutorial(message: types.Message):
     await message.reply("https://readyplayer.me", reply_markup=kb.markup1)
 
-
+#если задача решена верно то предложить создать персонажа
 @dp.message_handler(Text(equals="Отправь мне ссылку на созданного персонажа"))
 async def leftdead(message: types.Message):
     await message.reply(reply_markup=kb.markup0)
-
+# Создание персонажа
 @dp.message_handler(Text(equals="Начать игру"))
 async def begin(message: types.Message):
     await message.reply(reply_markup=kb.markup2)
