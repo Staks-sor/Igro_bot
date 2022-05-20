@@ -1,17 +1,16 @@
 from aiogram.types import ReplyKeyboardMarkup, KeyboardButton
 
 # hi
-button1 = KeyboardButton('Пройти обучение')  # +
+button1 = KeyboardButton('Создать персонажа')  # +
 button2 = KeyboardButton('Начать игру')  # +
 markup0 = ReplyKeyboardMarkup(resize_keyboard=True).add(
     button1).add(button2)
 
 # tutorial
-button1 = KeyboardButton('Налево')  # +
-button2 = KeyboardButton('Прямо')  # +
-button3 = KeyboardButton('Направо')  # +
+button1 = KeyboardButton('Отправь мне ссылку на созданного персонажа')  # +
+
 markup1 = ReplyKeyboardMarkup(resize_keyboard=True).add(
-    button1).add(button2).add(button3)
+    button1)
 
 # begin
 
